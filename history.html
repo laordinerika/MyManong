@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="history-page">
+
+    <div class="history-header">
+        <span class="back-btn" onclick="location.href='user-dashboard.html'">←</span>
+        <h2>History</h2>
+    </div>
+
+    <div class="history-tabs">
+        <button class="active-tab" onclick="switchTab('ongoing')">Ongoing</button>
+        <button onclick="switchTab('completed')">Completed</button>
+        <button onclick="switchTab('cancelled')">Cancelled</button>
+    </div>
+
+    <div class="history-list">
+        <!-- Bookings will be loaded dynamically -->
+    </div>
+
+    <div class="bottom-nav">
+        <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+        <div onclick="location.href='profile.html'">👤<p>Profile</p></div>
+        <div class="active">📖<p>History</p></div>
+        <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Load history when page loads
+    window.onload = function(){
+        loadHistory();
+    };
+</script>
+
+</body>
+</html>

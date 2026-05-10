@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="settings-page">
+
+    <div class="settings-header">
+        <span class="settings-back" onclick="location.href='user-dashboard.html'">←</span>
+        <h2>Settings</h2>
+    </div>
+
+    <div class="settings-list">
+
+        <div class="settings-item" onclick="editProfile()">
+            <span class="settings-icon">👤</span>
+            <span>Edit Profile</span>
+        </div>
+
+        <div class="settings-item" onclick="changeAppearance()">
+            <span class="settings-icon">⚙️</span>
+            <span>Appearance</span>
+        </div>
+
+        <div class="settings-item" onclick="paymentMethod()">
+            <span class="settings-icon">💳</span>
+            <span>Payment Method</span>
+        </div>
+
+        <div class="settings-item" onclick="notifications()">
+            <span class="settings-icon">🔔</span>
+            <span>Notification</span>
+        </div>
+
+        <div class="settings-item" onclick="changeLanguage()">
+            <span class="settings-icon">🌐</span>
+            <span>Language</span>
+        </div>
+
+        <div class="settings-item" onclick="helpSupport()">
+            <span class="settings-icon">❓</span>
+            <span>Help & Support</span>
+        </div>
+
+    </div>
+
+    <div class="settings-logout" onclick="location.href='index.html'">
+        Log Out
+    </div>
+
+    <div class="bottom-nav">
+        <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+        <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+        <div onclick="location.href='history.html'">📖<p>History</p></div>
+        <div class="active">⚙️<p>Settings</p></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

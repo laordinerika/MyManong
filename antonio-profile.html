@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Antonio Magtanggol Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="worker-profile-page">
+
+        <div class="worker-profile-header">
+            <img src="logo.png" alt="My Manong Logo" class="worker-profile-logo">
+            <p class="worker-profile-tagline">May Kailangan? MyManong Lang</p>
+        </div>
+
+        <div class="worker-profile-top-card">
+            <img src="antonio.jpg" alt="Antonio Magtanggol" class="worker-profile-image">
+
+            <div class="worker-profile-info">
+                <div class="worker-profile-text">
+                    <h2>Antonio Magtanggol</h2>
+                    <p>Plumber</p>
+                </div>
+
+                <div class="worker-profile-rating">
+                    <span>⭐ 4.9</span>
+                    <small>(29 Reviews)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="worker-profile-actions">
+            <button class="worker-action-btn" onclick="callWorker('09123456789')">Call</button>
+            <button class="worker-action-btn" onclick="goToChat('Antonio Magtanggol')">Message</button>
+            <button class="worker-action-btn" onclick="goToBooking('Antonio Magtanggol')">Book Now</button>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>About Me</h3>
+            <p>Reliable plumber with years of experience in pipe repair, leak fixing, and bathroom installations.</p>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>Reviews</h3>
+            <p><strong>Carmen D.</strong> ⭐ 5.0</p>
+            <p>“Good work and highly skilled. Very recommended!”</p>
+        </div>
+
+        <div class="worker-bottom-nav">
+            <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+            <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+            <div onclick="location.href='history.html'">📖<p>History</p></div>
+            <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadWorkerReviews("Antonio Magtanggol");
+    };
+</script>
+</body>
+</html>

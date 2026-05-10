@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Manong Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDashboard()">
+
+<div class="dashboard">
+
+<!-- HEADER -->
+<div class="header">
+<img src="logo.png" class="logo">
+<p class="tagline">May Kailangan? MyManong Lang</p>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search service or location" onkeyup="filterWorkers()">
+</div>
+
+<!-- SERVICES -->
+<div class="services">
+
+<div class="service" onclick="filterByService('carpentry')">
+    <p>🔨</p>
+    <span>Carpentry</span>
+</div>
+
+<div class="service" onclick="filterByService('masonry')">
+    <p>🧱</p>
+    <span>Masonry</span>
+</div>
+
+<div class="service" onclick="filterByService('plumbing')">
+    <p>🔧</p>
+    <span>Plumbing</span>
+</div>
+
+<div class="service" onclick="filterByService('electrical')">
+    <p>⚡</p>
+    <span>Electrical</span>
+</div>
+
+<div class="service" onclick="showAllWorkers()">
+    <p>🏠</p>
+    <span>All</span>
+</div>
+
+</div>
+
+<!-- WORKERS -->
+<div class="workers">
+
+<div class="worker" data-service="carpentry">
+<div>
+<strong>Juan Bautista</strong>
+<p>Carpenter • 2 km away</p>
+</div>
+<button onclick="location.href='juan-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="electrical">
+<div>
+<strong>Carlo Mendoza</strong>
+<p>Electrician • 5 km away</p>
+</div>
+<button onclick="location.href='carlo-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="electrical">
+<div>
+<strong>Joseph De Guzman</strong>
+<p>Electrician • 4.2 km away</p>
+</div>
+<button onclick="location.href='joseph-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="plumbing">
+<div>
+<strong>Ronald Arellano</strong>
+<p>Plumber • 1.5 km away</p>
+</div>
+<button onclick="location.href='ronald-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="carpentry">
+<div>
+<strong>Pedro Batumbakal</strong>
+<p>Carpenter • 2 km away</p>
+</div>
+<button onclick="location.href='pedro-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="masonry">
+<div>
+<strong>Enrico Rosario</strong>
+<p>Mason • 3 km away</p>
+</div>
+<button onclick="location.href='enrico-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="plumbing">
+<div>
+<strong>Antonio Magtanggol</strong>
+<p>Plumber • 2.5 km away</p>
+</div>
+<button onclick="location.href='antonio-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="masonry">
+<div>
+<strong>Danilo Santos</strong>
+<p>Mason • 4 km away</p>
+</div>
+<button onclick="location.href='danilo-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="carpentry">
+<div>
+<strong>Joel Santos</strong>
+<p>Carpenter • 3.2 km away</p>
+</div>
+<button onclick="location.href='joel-profile.html'">View</button>
+</div>
+
+<div class="worker" data-service="masonry">
+<div>
+<strong>Mark Garcia</strong>
+<p>Mason • 2.8 km away</p>
+</div>
+<button onclick="location.href='mark-profile.html'">View</button>
+</div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+
+<div onclick="goHome()">🏠<p>Home</p></div>
+<div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+<div onclick="location.href='history.html'">📖<p>History</p></div>
+<div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

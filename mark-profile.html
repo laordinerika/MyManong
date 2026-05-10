@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark Garcia Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="worker-profile-page">
+
+        <div class="worker-profile-header">
+            <img src="logo.png" alt="My Manong Logo" class="worker-profile-logo">
+            <p class="worker-profile-tagline">May Kailangan? MyManong Lang</p>
+        </div>
+
+        <div class="worker-profile-top-card">
+            <img src="mark.jpg" alt="Mark Garcia" class="worker-profile-image">
+
+            <div class="worker-profile-info">
+                <div class="worker-profile-text">
+                    <h2>Mark Garcia</h2>
+                    <p>Mason</p>
+                </div>
+
+                <div class="worker-profile-rating">
+                    <span>⭐ 4.6</span>
+                    <small>(23 Reviews)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="worker-profile-actions">
+            <button class="worker-action-btn" onclick="callWorker('09123456789')">Call</button>
+            <button class="worker-action-btn" onclick="goToChat('Mark Garcia')">Message</button>
+            <button class="worker-action-btn" onclick="goToBooking('Mark Garcia')">Book Now</button>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>About Me</h3>
+            <p>Skilled mason with 7 years of experience in masonry.</p>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>Reviews</h3>
+            <p><strong>Janneth M.</strong> ⭐ 5.0</p>
+            <p>“Good work and very professional.”</p>
+        </div>
+
+        <div class="worker-bottom-nav">
+            <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+            <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+            <div onclick="location.href='history.html'">📖<p>History</p></div>
+            <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadWorkerReviews("Mark Garcia");
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadProfile()">
+
+<div class="user-profile-page">
+
+    <div class="user-profile-header">
+        <span class="profile-back" onclick="location.href='user-dashboard.html'">←</span>
+        <h2>View</h2>
+    </div>
+
+    <div class="user-profile-card">
+        <img id="profileImage" src="profile-user.png" class="user-profile-image">
+        <h2 id="profileName">Name Here</h2>
+    </div>
+
+    <div class="user-profile-section">
+        <h3>Contact Information</h3>
+        <p>📞 <span id="profilePhone"></span></p>
+        <p>✉️ <span id="profileEmail"></span></p>
+    </div>
+
+    <div class="bottom-nav">
+        <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+        <div onclick="location.href='profile.html'">👤<p>Profile</p></div>
+        <div onclick="location.href='history.html'">📖<p>History</p></div>
+        <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Register</h1>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="password" id="password" placeholder="Password">
+
+        <label class="show-pass">
+    <input type="checkbox" onclick="togglePassword('password')">
+    Show Password
+</label>
+
+        <button class="btn-filled" onclick="registerUser()">
+    Create Account
+        </button>
+
+        <p onclick="location.href='index.html'" class="back">
+            ← Back
+        </p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadPayment()">
+
+<div class="payment-page">
+
+    <div class="payment-header">
+        <span onclick="history.back()">←</span>
+        <h2>Payment</h2>
+    </div>
+
+    <div class="payment-details">
+        <h3 id="paymentWorker"></h3>
+        <p id="paymentService"></p>
+        <p id="paymentDate"></p>
+        <p id="paymentTime"></p>
+    </div>
+
+    <div class="payment-methods">
+
+        <h4>Select Payment Method</h4>
+
+        <div class="payment-option" onclick="selectPayment('GCash')">📱 GCash (E-Wallet)</div>
+        <div class="payment-option" onclick="selectPayment('PayMaya')">💳 PayMaya (E-Wallet)</div>
+        <div class="payment-option" onclick="selectPayment('BDO Online')">🏦 BDO Online Banking</div>
+        <div class="payment-option" onclick="selectPayment('BPI Online')">🏦 BPI Online Banking</div>
+        <div class="payment-option" onclick="selectPayment('Cash on Service')">💵 Cash (Upon Completion)</div>
+
+    </div>
+
+    <div class="payment-notice">
+        <p><strong>⚠️ Payment Status: On Hold</strong></p>
+        <p>Your payment will be securely held and charged only after the job is completed and confirmed.</p>
+    </div>
+
+    <button class="btn-filled" onclick="confirmPayment()">Confirm Payment Method</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadChat()">
+
+<div class="chat-page">
+
+    <div class="chat-header">
+        <span onclick="history.back()">←</span>
+        <h3 id="chatName">Worker</h3>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <!-- messages will appear here -->
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

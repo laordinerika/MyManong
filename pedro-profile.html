@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedro Batumbakal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="worker-profile-page">
+
+        <div class="worker-profile-header">
+            <img src="logo.png" alt="My Manong Logo" class="worker-profile-logo">
+            <p class="worker-profile-tagline">May Kailangan? MyManong Lang</p>
+        </div>
+
+        <div class="worker-profile-top-card">
+            <img src="pedro.jpg" alt="Pedro Batumbakal" class="worker-profile-image">
+
+            <div class="worker-profile-info">
+                <div class="worker-profile-text">
+                    <h2>Pedro Batumbakal</h2>
+                    <p>Carpenter</p>
+                </div>
+
+                <div class="worker-profile-rating">
+                    <span>⭐ 4.8</span>
+                    <small>(29 Reviews)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="worker-profile-actions">
+            <button class="worker-action-btn" onclick="callWorker('09123456789')">Call</button>
+            <button class="worker-action-btn" onclick="goToChat('Pedro Batumbakal')">Message</button>
+            <button class="worker-action-btn" onclick="goToBooking('Pedro Batumbakal')">Book Now</button>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>About Me</h3>
+            <p>Skilled carpenter with 12 years of experience in residential and commercial projects.</p>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>Reviews</h3>
+            <p><strong>Miranda D.</strong> ⭐ 5.0</p>
+            <p>“Good work and very professional.”</p>
+        </div>
+
+        <div class="worker-bottom-nav">
+            <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+            <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+            <div onclick="location.href='history.html'">📖<p>History</p></div>
+            <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadWorkerReviews("Pedro Batumbakal");
+    };
+</script>
+</body>
+</html>

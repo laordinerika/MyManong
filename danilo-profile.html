@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danilo Santos Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="worker-profile-page">
+
+        <div class="worker-profile-header">
+            <img src="logo.png" alt="My Manong Logo" class="worker-profile-logo">
+            <p class="worker-profile-tagline">May Kailangan? MyManong Lang</p>
+        </div>
+
+        <div class="worker-profile-top-card">
+            <img src="danilo.jpg" alt="Danilo Santos" class="worker-profile-image">
+
+            <div class="worker-profile-info">
+                <div class="worker-profile-text">
+                    <h2>Danilo Santos</h2>
+                    <p>Mason</p>
+                </div>
+
+                <div class="worker-profile-rating">
+                    <span>⭐ 4.9</span>
+                    <small>(22 Reviews)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="worker-profile-actions">
+            <button class="worker-action-btn" onclick="callWorker('09123456789')">Call</button>
+            <button class="worker-action-btn" onclick="goToChat('Danilo Santos')">Message</button>
+            <button class="worker-action-btn" onclick="goToBooking('Danilo Santos')">Book Now</button>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>About Me</h3>
+            <p>Skilled mason with 7 years of experience in masonry.</p>
+        </div>
+
+        <div class="worker-profile-section">
+            <h3>Reviews</h3>
+            <p><strong>Elpidia D.</strong> ⭐ 5.0</p>
+            <p>“Very good worker.”</p>
+        </div> 
+
+        <div class="worker-bottom-nav">
+            <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+            <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+            <div onclick="location.href='history.html'">📖<p>History</p></div>
+            <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        loadWorkerReviews("Danilo Santos");
+    };
+</script>
+</body>
+</html>

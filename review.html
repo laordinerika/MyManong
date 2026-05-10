@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="review-page">
+
+    <div class="review-header">
+        <span class="back-btn" onclick="goBack()">←</span>
+        <h2>Leave Review</h2>
+    </div>
+
+    <div class="review-content">
+        <div class="service-info">
+            <h3 id="serviceTitle">Service Review</h3>
+            <p id="serviceDetails">Service details will be loaded here</p>
+        </div>
+
+        <div class="rating-section">
+            <h4>Rate your experience</h4>
+            <div class="stars" id="starRating">
+                <span class="star" data-rating="1">★</span>
+                <span class="star" data-rating="2">★</span>
+                <span class="star" data-rating="3">★</span>
+                <span class="star" data-rating="4">★</span>
+                <span class="star" data-rating="5">★</span>
+            </div>
+            <p class="rating-text" id="ratingText">Select a rating</p>
+        </div>
+
+        <div class="comment-section">
+            <h4>Leave a comment (optional)</h4>
+            <textarea id="reviewComment" placeholder="Share your experience with this service..." rows="4"></textarea>
+        </div>
+
+        <div class="name-section">
+            <h4>Display Your Name?</h4>
+            <div class="name-options">
+                <label>
+                    <input type="radio" name="nameDisplay" value="anonymous" checked>
+                    Keep Anonymous
+                </label>
+                <label>
+                    <input type="radio" name="nameDisplay" value="show">
+                    Show My Name (<span id="displayName">Your Name</span>)
+                </label>
+            </div>
+        </div>
+
+        <button class="submit-review-btn" onclick="submitReview()">Submit Review</button>
+    </div>
+
+    <div class="bottom-nav">
+        <div onclick="location.href='user-dashboard.html'">🏠<p>Home</p></div>
+        <div onclick="location.href='user-profile.html'">👤<p>Profile</p></div>
+        <div onclick="location.href='history.html'">📖<p>History</p></div>
+        <div onclick="location.href='settings.html'">⚙️<p>Settings</p></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Load review data when page loads
+    window.onload = function(){
+        loadReviewData();
+        initializeTheme();
+    };
+</script>
+
+</body>
+</html>

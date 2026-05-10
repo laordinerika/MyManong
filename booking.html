@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking-page">
+
+    <div class="booking-header">
+        <span class="booking-back" onclick="history.back()">←</span>
+        <h2>Book Service</h2>
+    </div>
+
+    <div class="booking-form">
+
+        <label>Full Name</label>
+        <input type="text" id="bookingName" placeholder="Enter your full name">
+
+        <label>Phone Number</label>
+        <input type="text" id="bookingPhone" placeholder="Enter your phone number">
+
+        <div class="selected-worker-box">
+            <label>Worker</label>
+            <p id="bookingWorkerDisplay" class="selected-worker-name">Worker selected from profile</p>
+        </div>
+
+        <label>Service Needed</label>
+        <input type="text" id="bookingService" placeholder="e.g. Door repair">
+
+        <label>Date</label>
+        <input type="date" id="bookingDate">
+
+        <label>Time</label>
+        <input type="time" id="bookingTime">
+
+        <label>Address</label>
+        <input type="text" id="bookingAddress" placeholder="Enter your address">
+
+        <label>Concern / Details</label>
+        <textarea id="bookingConcern" placeholder="Describe your concern"></textarea>
+
+        <button class="btn-filled" onclick="submitBooking()">Submit Booking</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    window.onload = function(){
+        if(window.location.pathname.includes('booking.html') || window.location.href.includes('booking.html')){
+            loadBookingDetails();
+        }
+    };
+</script>
+</body>
+</html>

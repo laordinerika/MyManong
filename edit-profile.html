@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadEditProfile()">
+
+<div class="form-container">
+
+    <h2>Edit Profile</h2>
+
+    <!-- Profile Image -->
+    <img id="previewImage" src="profile-user.png" class="edit-profile-img">
+
+    <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+
+    <input type="text" id="editName" placeholder="Full Name">
+    <input type="email" id="editEmail" placeholder="Email">
+    <input type="text" id="editPhone" placeholder="Phone Number">
+
+    <input type="password" id="editPassword" placeholder="New Password (optional)">
+
+    <button class="btn-filled" onclick="saveProfile()">Save Changes</button>
+
+    <p class="back" onclick="location.href='settings.html'">← Back</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
